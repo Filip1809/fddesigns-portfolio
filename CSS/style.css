@@ -1,0 +1,81 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+/* Basic styling for the icon wrapper */
+.icon-wrapper {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 8px; /* Optional: Rounded corners */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Styling the icons */
+.skill-icon {
+  width: 50px; /* Set a larger size for better visibility */
+  height: 50px; /* Keep the aspect ratio square */
+}
+
+/* Hover effect on icon wrapper */
+.icon-wrapper:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon */
+  background-color: #fff; /* Add a background color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow effect */
+}
+
+.icon-wrapper:focus {
+  outline: none; /* Removes default focus outline */
+  transform: scale(1.1);
+  background-color: #f8f9fa;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Enhance shadow on focus */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 576px) {
+  .icon-wrapper {
+    margin: 10px;
+  }
+  .skill-icon {
+    width: 40px; /* Smaller size on mobile */
+    height: 40px;
+  }
+}
+
+/* Larger screens: Keep the spacing and size consistent */
+@media (min-width: 768px) {
+  .icon-wrapper {
+    margin: 15px;
+  }
+  .skill-icon {
+    width: 60px; /* Slightly larger icons on medium screens */
+    height: 60px;
+  }
+}
+
+/* Link wrapper for social media icons */
+.link-wrapper {
+  display: inline-block;
+  padding: 1px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer; /* Make it clickable */
+}
+
+/* Hover effect for social media links */
+.link-wrapper:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon */
+  background-color: #fff; /* Add a background color on hover */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow effect */
+}
+
+/* Focus effect for social media links */
+.link-wrapper:focus {
+  outline: none; /* Removes default focus outline */
+  background-color: #007bff; /* Focused background color */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Enhanced focus shadow */
+}
