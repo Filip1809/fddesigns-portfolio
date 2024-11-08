@@ -46,9 +46,17 @@
     margin: 10px;
   }
   .skill-icon {
-    width: 40px; /* Smaller size on mobile */
+    width: 40px; /* Fixed smaller size on mobile */
     height: 40px;
   }
+}
+
+/* General size settings for the icons */
+.skill-icon {
+  width: 60px; /* Default size */
+  height: 60px;
+  max-width: 100px; /* Set a maximum width to prevent excessive scaling */
+  max-height: 100px; /* Set a maximum height as well */
 }
 
 /* Larger screens: Keep the spacing and size consistent */
@@ -61,6 +69,7 @@
     height: 60px;
   }
 }
+
 
 
 
