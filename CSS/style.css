@@ -70,12 +70,23 @@
 .link-wrapper:hover {
   transform: scale(1.1); /* Slightly enlarge the icon */
   background-color: #fff; /* Add a background color on hover */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow effect */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
 }
 
 /* Focus effect for social media links */
 .link-wrapper:focus {
-  outline: none; /* Removes default focus outline */
-  background-color: #007bff; /* Focused background color */
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Enhanced focus shadow */
+  outline: none; 
+  background-color: #007bff; 
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); 
+}
+
+
+.nav-link {
+  transition: transform 100ms, color 100ms;
+}
+
+/* Define hover effects */
+.nav-link:hover {
+  transform: scale(1.1);
+  color: #ffc107; /* Bootstrap's warning color */
 }
