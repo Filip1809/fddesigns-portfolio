@@ -5,6 +5,17 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+p, span, li {
+  font-family: 'Pridi', serif;
+}
+
+
 .btn-outline-warning {
   position: relative;
   z-index: 1;
@@ -135,6 +146,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
   object-fit: cover;           
   transition: transform 0.3s ease, filter 0.3s ease; 
+  margin-top: 5%;
 }
 
 .profile-image:hover {
