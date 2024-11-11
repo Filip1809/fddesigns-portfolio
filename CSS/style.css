@@ -70,11 +70,9 @@
   }
 }
 
-
-
-
 .nav-link {
   position: relative;
+  display: inline-block;
   transition: color 200ms;
 }
 
@@ -93,6 +91,43 @@
 .nav-link:hover::after {
   transform: scaleX(1);
 }
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to the About Me section */
+.resume-of-me {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0; 
+  transform: translateY(20px); 
+  animation-delay: 0.3s; 
+}
+
+/* Hover effect for h1 and p */
+.resume-of-me h1,
+.resume-of-me p.lead {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.resume-of-me h1:hover {
+  color: #ffc107; 
+  transform: scale(1.2); 
+}
+
+.resume-of-me p.lead:hover {
+  color: #555; 
+  transform: scale(1.02); 
+}
+
 
 .profile-image {
   border-radius: 20px;
@@ -130,4 +165,14 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); 
 }
 
-
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
