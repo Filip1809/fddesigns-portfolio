@@ -1,4 +1,4 @@
-
+/* Global Styles */
 *,
 *::before,
 *::after {
@@ -8,14 +8,17 @@
 body {
   font-family: 'Alegreya Sans', sans-serif;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
+
 p, span, li {
   font-family: 'Pridi', serif;
 }
 
 
+/* Button Styles */
 .btn-outline-warning {
   position: relative;
   z-index: 1;
@@ -39,49 +42,54 @@ p, span, li {
   left: 0;
 }
 
+
+/* Icon Wrapper Styles */
 .icon-wrapper {
   display: inline-block;
   padding: 10px;
-  border-radius: 8px; 
+  border-radius: 8px;
   transition: all 0.3s ease-in-out;
 }
 
 .icon-wrapper:hover {
-  background-color: #ffc107; 
+  background-color: #ffc107;
   box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
 }
 
 
-/* Responsive Design for smaller screens */
+/* General Icon Styles */
+.skill-icon {
+  width: 60px;  /* Default size */
+  height: 60px;
+  max-width: 100px;  /* Max width to prevent excessive scaling */
+  max-height: 100px;  /* Max height */
+}
+
+
+/* Responsive Design for Smaller Screens */
 @media (max-width: 576px) {
   .icon-wrapper {
     margin: 10px;
   }
   .skill-icon {
-    width: 40px; /* Fixed smaller size on mobile */
+    width: 40px;  /* Smaller size on mobile */
     height: 40px;
   }
 }
 
-/* General size settings for the icons */
-.skill-icon {
-  width: 60px; /* Default size */
-  height: 60px;
-  max-width: 100px; /* Set a maximum width to prevent excessive scaling */
-  max-height: 100px; /* Set a maximum height as well */
-}
-
-/* Larger screens: Keep the spacing and size consistent */
+/* Larger Screens (Medium Screens and above) */
 @media (min-width: 768px) {
   .icon-wrapper {
     margin: 15px;
   }
   .skill-icon {
-    width: 60px; /* Slightly larger icons on medium screens */
+    width: 60px;  /* Slightly larger icons on medium screens */
     height: 60px;
   }
 }
 
+
+/* Navigation Link Styles */
 .nav-link {
   position: relative;
   display: inline-block;
@@ -95,7 +103,7 @@ p, span, li {
   bottom: -3px;
   width: 100%;
   height: 2px;
-  background-color: #ffc107; 
+  background-color: #ffc107;
   transform: scaleX(0);
   transition: transform 200ms ease-in-out;
 }
@@ -104,7 +112,8 @@ p, span, li {
   transform: scaleX(1);
 }
 
-/* Fade-in animation */
+
+/* Resume Section Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -116,76 +125,66 @@ p, span, li {
   }
 }
 
-/* Apply animation to the About Me section */
 .resume-of-me {
   animation: fadeInUp 0.8s ease-out forwards;
-  opacity: 0; 
-  transform: translateY(20px); 
-  animation-delay: 0.3s; 
+  opacity: 0;
+  transform: translateY(20px);
+  animation-delay: 0.3s;
 }
 
-/* Hover effect for h1 and p */
-.resume-of-me h1,
+.resume-of-me h2,
 .resume-of-me p.lead {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.resume-of-me h1:hover {
-  color: #ffc107; 
-  transform: scale(1.2); 
+p.lead { 
+  margin-top: 40px;
+}
+
+.resume-of-me h2:hover {
+  color: #ffc107;
+  transform: scale(1.2);
 }
 
 .resume-of-me p.lead:hover {
-  color: #555; 
-  transform: scale(1.02); 
+  color: #555;
+  transform: scale(1.02);
 }
 
 
+/* Profile Image Styles */
 .profile-image {
   border-radius: 20px;
-  border: 3px solid #333;      
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
-  object-fit: cover;           
-  transition: transform 0.3s ease, filter 0.3s ease; 
+  border: 3px solid #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
   margin-top: 5%;
 }
 
 .profile-image:hover {
   transform: scale(1.05);
-  filter: brightness(1.2); 
+  filter: brightness(1.2);
 }
 
 
+/* Link Wrapper Styles */
 .link-wrapper {
   display: inline-block;
   padding: 1px;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
-  cursor: pointer; 
+  cursor: pointer;
 }
-
 
 .link-wrapper:hover {
   transform: scale(1.1) rotate(5deg);
-  background-color: #ffc107; 
+  background-color: #ffc107;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-
 .link-wrapper:focus {
-  outline: none; 
-  background-color: #007bff; 
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); 
-}
-
-/* Fade-in animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  outline: none;
+  background-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
