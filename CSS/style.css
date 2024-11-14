@@ -190,7 +190,6 @@ p.lead {
 }
 
 
-
 /* Featured Projects Section */
 #projects {
   background-color: #1e2d3b; /* Dark background for contrast */
@@ -277,9 +276,57 @@ p.lead {
 }
 
 
+/* Get in Touch Section */
+#get-in-touch {
+  background: linear-gradient(to bottom right, #2b2b2b, #1a1a1a);
+  color: #fff;
+}
 
+#get-in-touch h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
 
+#get-in-touch p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
 
+#get-in-touch a {
+  color: #f1c40f;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
+#get-in-touch a:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
 
+.get-in-touch .col-md-8 {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 
+#get-in-touch h2 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  #get-in-touch h2 {
+    font-size: 2rem;
+  }
+
+  #get-in-touch p {
+    font-size: 1rem;
+  }
+
+  #get-in-touch .col-md-8 {
+    padding: 20px;
+  }
+}
