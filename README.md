@@ -8,5 +8,4 @@ This portfolio is still being developed. Currently, it features:
 
 ## Technologies Used
 
-- HTML, CSS (Bootstrap), JavaScript
-- Adobe Photoshop & Illustrator, figma
+- HTML, CSS (Bootstrap), JavaScript 
