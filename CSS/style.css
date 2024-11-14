@@ -114,7 +114,7 @@ p, span, li {
 
 
 /* Resume Section Animations */
-@keyframes fadeInUp {
+@keyframes fadeInUp { 
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -123,7 +123,7 @@ p, span, li {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} 
 
 .resume-of-me {
   animation: fadeInUp 0.8s ease-out forwards;
@@ -188,3 +188,98 @@ p.lead {
   background-color: #007bff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
+
+
+
+/* Featured Projects Section */
+#projects {
+  background-color: #1e2d3b; /* Dark background for contrast */
+  padding: 50px 0;
+}
+
+.featured-projects {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+.project-description {
+  border-left: 4px solid #ffc107; /* Yellow accent */
+  padding-left: 20px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.project-description:hover {
+  background-color: #212121;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-description h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ffc107; /* Yellow for project title */
+}
+
+.project-description p {
+  font-size: 1.1rem;
+}
+
+
+/* Carrusel slider styles */
+.carousel-inner img {
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.carousel-inner img:hover {
+  transform: scale(1.05);
+}
+
+#carrusel-one .carousel-inner img {
+  width: 100%;            /* Ensure images scale to the width of the carousel */
+  height: auto;           /* Allow height to adjust automatically */
+  object-fit: contain;    /* Ensure the entire image fits without cropping */
+  border-radius: 8px;     /* Optional: Adds a rounded border to the images */
+}
+
+#carrusel-one {
+  max-width: 100%;          /* Ensure the carousel takes up full width */
+  width: 100%;              /* Make sure it's always 100% of the parent container */
+  margin: 0 auto;           /* Center the carousel */
+}
+
+@media (min-width: 1200px) {
+  #carrusel-one {
+    max-width: 90%;       
+  }
+}
+
+#carrusel-one {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  #carrusel-one {
+    padding: 40px;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.3); 
+  border-radius: 50%; 
+}
+
+
+
+
+
+
+
+
