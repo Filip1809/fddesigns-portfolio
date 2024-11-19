@@ -238,33 +238,11 @@ p.lead {
   transform: scale(1.05);
 }
 
-#carrusel-one .carousel-inner img {
+.carousel-inner img {
   width: 100%;            /* Ensure images scale to the width of the carousel */
   height: auto;           /* Allow height to adjust automatically */
   object-fit: contain;    /* Ensure the entire image fits without cropping */
   border-radius: 8px;     /* Optional: Adds a rounded border to the images */
-}
-
-#carrusel-one {
-  max-width: 100%;          /* Ensure the carousel takes up full width */
-  width: 100%;              /* Make sure it's always 100% of the parent container */
-  margin: 0 auto;           /* Center the carousel */
-}
-
-@media (min-width: 1200px) {
-  #carrusel-one {
-    max-width: 90%;       
-  }
-}
-
-#carrusel-one {
-  padding: 20px;
-}
-
-@media (min-width: 768px) {
-  #carrusel-one {
-    padding: 40px;
-  }
 }
 
 .carousel-control-prev-icon,
