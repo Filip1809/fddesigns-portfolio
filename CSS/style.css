@@ -239,7 +239,7 @@ p.lead {
 }
 
 .carousel-inner img {
-  width: 100%;            /* Ensure images scale to the width of the carousel */
+  width: 50%;            /* Ensure images scale to the width of the carousel */
   height: auto;           /* Allow height to adjust automatically */
   object-fit: contain;    /* Ensure the entire image fits without cropping */
   border-radius: 8px;     /* Optional: Adds a rounded border to the images */
