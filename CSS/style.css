@@ -4,7 +4,7 @@
 *::after {
   box-sizing: border-box;
 }
-                                                       
+
 html {
   scroll-behavior: smooth;
 }
@@ -20,7 +20,6 @@ h1, h2, h3, h4, h5, h6 {
 p, span, li {
   font-family: 'Pridi', serif;
 }
-
 
 /* Button Styles */
 .btn-outline-warning {
@@ -46,7 +45,6 @@ p, span, li {
   left: 0;
 }
 
-
 /* Icon Wrapper Styles */
 .icon-wrapper {
   display: inline-block;
@@ -60,16 +58,14 @@ p, span, li {
   box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
 }
 
-
 /* General Icon Styles */
 .skill-icon {
-  width: 60px;  /* Default size */
+  width: 60px;
   height: 60px;
-  max-width: 100px;  /* Max width to prevent excessive scaling */
-  max-height: 100px;  /* Max height */
+  max-width: 100px;
+  max-height: 100px;
   animation: fadeIn 1s ease-in-out;
 }
-
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 576px) {
@@ -77,7 +73,7 @@ p, span, li {
     margin: 10px;
   }
   .skill-icon {
-    width: 40px;  /* Smaller size on mobile */
+    width: 40px;
     height: 40px;
   }
 }
@@ -88,11 +84,10 @@ p, span, li {
     margin: 15px;
   }
   .skill-icon {
-    width: 60px;  /* Slightly larger icons on medium screens */
+    width: 60px;
     height: 60px;
   }
 }
-
 
 /* Navigation Link Styles */
 .nav-link {
@@ -116,7 +111,6 @@ p, span, li {
 .nav-link:hover::after {
   transform: scaleX(1);
 }
-
 
 /* Resume Section Animations */
 @keyframes fadeInUp { 
@@ -165,7 +159,6 @@ p.lead {
   transform: scale(1.02);
 }
 
-
 /* Profile Image Styles */
 .profile-image {
   border-radius: 20px;
@@ -180,7 +173,6 @@ p.lead {
   transform: scale(1.05);
   filter: brightness(1.2);
 }
-
 
 /* Link Wrapper Styles */
 .link-wrapper {
@@ -203,10 +195,9 @@ p.lead {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
-
 /* Featured Projects Section */
 #projects {
-  background-color: #1e2d3b; /* Dark background for contrast */
+  background-color: #1e2d3b;
   padding: 50px 0;
 }
 
@@ -220,7 +211,7 @@ p.lead {
 }
 
 .project-description {
-  border-left: 4px solid #ffc107; /* Yellow accent */
+  border-left: 4px solid #ffc107;
   padding-left: 20px;
   margin-bottom: 30px;
   transition: all 0.3s ease;
@@ -234,15 +225,14 @@ p.lead {
 .project-description h4 {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #ffc107; /* Yellow for project title */
+  color: #ffc107;
 }
 
 .project-description p {
   font-size: 1.1rem;
 }
 
-
-/* Carrusel slider styles */
+/* Carousel Slider Styles */
 .carousel-inner img {
   border-radius: 8px;
   transition: transform 0.5s ease;
@@ -253,10 +243,10 @@ p.lead {
 }
 
 .carousel-inner img {
-  width: 50%;            /* Ensure images scale to the width of the carousel */
-  height: auto;           /* Allow height to adjust automatically */
-  object-fit: contain;    /* Ensure the entire image fits without cropping */
-  border-radius: 8px;     /* Optional: Adds a rounded border to the images */
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 .carousel-control-prev-icon,
@@ -266,7 +256,6 @@ p.lead {
   background-color: rgba(0, 0, 0, 0.3); 
   border-radius: 50%; 
 }
-
 
 /* Get in Touch Section */
 #get-in-touch {
@@ -325,7 +314,7 @@ p.lead {
 
 /* Personal Projects Section */
 #personal-projects {
-  background-color: #f8f9fa; /* Light background for contrast */
+  background-color: #f8f9fa;
   padding: 50px 0;
 }
 
