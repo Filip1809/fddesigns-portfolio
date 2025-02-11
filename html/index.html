@@ -105,18 +105,25 @@
     <!-- About Me Section -->
     <section class="p-5 bg-dark text-light" id="about">
       <div class="container">
-        <div class="row align-items-start text-center text-md-start">
-          <div class="col-12 resume-of-me col-md-6">
-            <h2>About Me</h2>
-            <p class="lead">
-              Hi, I’m Filip – a multimedia design student who’s passionate about turning creative ideas into beautiful and functional websites. <br> <br> Web design isn’t just what I do – it’s what I love. As I continue my learning journey, I’m eager to bring fresh perspectives and innovative solutions to every project I take on.
-              <br><br>Even though I’m still growing as a designer, I always aim to deliver work that truly resonates with you and your vision. My goal is to help you build a digital presence that feels both visually stunning and easy to navigate.
-              I’m here to make your ideas come to life and work with you to create something amazing. Let’s make something great together!
-            </p>
+        <div class="row align-items-center text-center text-md-start">
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <div class="card bg-dark text-light border-0">
+              <div class="card-body">
+                <h2 class="card-title">About Me</h2>
+                <h5 class="card-subtitle mb-3">Filip Johannesen</h5>
+                <p class="card-text lead">
+                  Hi, I’m Filip – a multimedia design student who’s passionate about turning creative ideas into beautiful and functional websites. <br><br>
+                  Web design isn’t just what I do – it’s what I love. As I continue my learning journey, I’m eager to bring fresh perspectives and innovative solutions to every project I take on.
+                  <br><br>
+                  Even though I’m still growing as a designer, I always aim to deliver work that truly resonates with you and your vision. My goal is to help you build a digital presence that feels both visually stunning and easy to navigate.
+                  I’m here to make your ideas come to life and work with you to create something amazing. Let’s make something great together!
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-12 col-md-6 d-flex justify-content-center mt-4-md">
-            <img src="/img/Profile picture.jfif" alt="Profile Image" class="img-fluid profile-image">
-          </div>         
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <img src="/img/Profile picture.jfif" alt="Profile Image" class="img-fluid profile-image rounded-circle">
+          </div>
         </div>
       </div>
     </section>
@@ -215,10 +222,34 @@
         <!-- Contact Details Section -->
         <div class="row justify-content-center mt-4">
           <div class="col-md-8 col-lg-6 text-center">
-            <p>If you would like to collaborate or simply have a question, don't hesitate to contact me directly via email or social media!</p>
+            <p>If you would like to collaborate or simply have a question, don't hesitate to contact me directly via email, phone or social media!</p>
             
             <h4>Email:</h4>
             <p><a href="mailto:Fdj@newlines.dk" class="text-warning">Fdj@newlines.dk</a></p>
+            
+            <h4>Phone:</h4>
+            <p><a href="tel:+1234567890" class="text-warning">+45 53 18 09 01</a></p>
+          </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-8 col-lg-6">
+            <form action="https://formspree.io/f/xgvolkre" method="POST" data-netlify="true">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-warning btn-lg">Send Message</button>
+            </form>
           </div>
         </div>
       </div>

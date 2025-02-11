@@ -11,6 +11,7 @@ html {
 
 body {
   font-family: 'Alegreya Sans', sans-serif;
+  background-color: #f8f9fa; /* Light background for better contrast */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,6 +28,8 @@ p, span, li {
   z-index: 1;
   overflow: hidden;
   transition: color 200ms;
+  color: #343a40; /* Primary color */
+  border-color: #ffc107; /* Secondary color */
 }
 
 .btn-outline-warning::before {
@@ -54,7 +57,7 @@ p, span, li {
 }
 
 .icon-wrapper:hover {
-  background-color: #ffc107;
+  background-color: #ffc107; /* Secondary color */
   box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
 }
 
@@ -94,6 +97,7 @@ p, span, li {
   position: relative;
   display: inline-block;
   transition: color 200ms;
+  color: #f8f9fa; /* Light color for contrast */
 }
 
 .nav-link::after {
@@ -103,7 +107,7 @@ p, span, li {
   bottom: -3px;
   width: 100%;
   height: 2px;
-  background-color: #ffc107;
+  background-color: #ffc107; /* Secondary color */
   transform: scaleX(0);
   transition: transform 200ms ease-in-out;
 }
@@ -150,7 +154,7 @@ p.lead {
 }
 
 .resume-of-me h2:hover {
-  color: #ffc107;
+  color: #ffc107; /* Secondary color */
   transform: scale(1.2);
 }
 
@@ -162,7 +166,7 @@ p.lead {
 /* Profile Image Styles */
 .profile-image {
   border-radius: 20px;
-  border: 3px solid #333;
+  border: 3px solid #343a40; /* Primary color */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   object-fit: cover;
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -185,19 +189,19 @@ p.lead {
 
 .link-wrapper:hover {
   transform: scale(1.1) rotate(5deg);
-  background-color: #ffc107;
+  background-color: #ffc107; /* Secondary color */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .link-wrapper:focus {
   outline: none;
-  background-color: #007bff;
+  background-color: #007bff; /* Accent color 1 */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Featured Projects Section */
 #projects {
-  background-color: #1e2d3b;
+  background-color: #343a40; /* Primary color */
   padding: 50px 0;
 }
 
@@ -208,10 +212,11 @@ p.lead {
   letter-spacing: 1px;
   margin-bottom: 30px;
   text-align: start;
+  color: #ffc107; /* Secondary color */
 }
 
 .project-description {
-  border-left: 4px solid #ffc107;
+  border-left: 4px solid #ffc107; /* Secondary color */
   padding-left: 20px;
   margin-bottom: 30px;
   transition: all 0.3s ease;
@@ -225,57 +230,37 @@ p.lead {
 .project-description h4 {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #ffc107;
+  color: #ffc107; /* Secondary color */
 }
 
 .project-description p {
   font-size: 1.1rem;
-}
-
-/* Carousel Slider Styles */
-.carousel-inner img {
-  border-radius: 8px;
-  transition: transform 0.5s ease;
-}
-
-.carousel-inner img:hover {
-  transform: scale(1.05);
-}
-
-.carousel-inner img {
-  width: 50%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 8px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: rgba(0, 0, 0, 0.3); 
-  border-radius: 50%; 
+  color: #f8f9fa; /* Light color for contrast */
 }
 
 /* Get in Touch Section */
 #get-in-touch {
   background: linear-gradient(to bottom right, #2b2b2b, #1a1a1a);
-  color: #fff;
+  color: #f8f9fa; /* Light color for contrast */
+  padding: 50px 0;
 }
 
 #get-in-touch h2 {
   font-weight: bold;
   font-size: 2.5rem;
   letter-spacing: 1px;
+  margin-bottom: 30px;
+  animation: fadeInDown 1s ease-in-out;
 }
 
 #get-in-touch p {
   font-size: 1.125rem;
   line-height: 1.6;
+  animation: fadeInUp 1s ease-in-out;
 }
 
 #get-in-touch a {
-  color: #f1c40f;
+  color: #ffc107; /* Secondary color */
   font-weight: bold;
   font-size: 1.2rem;
   text-decoration: none;
@@ -283,7 +268,7 @@ p.lead {
 }
 
 #get-in-touch a:hover {
-  color: #e67e22;
+  color: #e67e22; /* Accent color 2 */
   text-decoration: underline;
 }
 
@@ -292,6 +277,7 @@ p.lead {
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease-in-out;
 }
 
 #get-in-touch h2 {
@@ -312,9 +298,45 @@ p.lead {
   }
 }
 
+/* Contact Form Styles */
+#get-in-touch form {
+  
+  padding: 30px;
+  border-radius: 8px;
+  
+}
+
+#get-in-touch .form-label {
+  color: #f8f9fa;
+}
+
+#get-in-touch .form-control {
+  background-color: #343a40;
+  color: #f8f9fa;
+  border: 1px solid #ffc107;
+}
+
+#get-in-touch .form-control:focus {
+  background-color: #343a40;
+  color: #f8f9fa;
+  border-color: #ffc107;
+  box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+}
+
+#get-in-touch .btn-outline-warning {
+  color: #f8f9fa;
+  border-color: #ffc107;
+}
+
+#get-in-touch .btn-outline-warning:hover {
+  color: #343a40;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
 /* Personal Projects Section */
 #personal-projects {
-  background-color: #f8f9fa;
+  background-color: #f8f9fa; /* Light background for better contrast */
   padding: 50px 0;
 }
 
@@ -325,6 +347,7 @@ p.lead {
   letter-spacing: 1px;
   margin-bottom: 30px;
   text-align: center;
+  color: white
 }
 
 .project {
@@ -345,7 +368,7 @@ p.lead {
 .project h4 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #333;
+  color: #343a40; /* Primary color */
 }
 
 .project p {
@@ -359,20 +382,20 @@ p.lead {
 
 /* Custom styles for View Project buttons */
 #personal-projects .btn-outline-warning {
-  color: #2b2b2b;
-  border-color: #ffc107;
+  color: #343a40; /* Primary color */
+  border-color: #ffc107; /* Secondary color */
 }
 
 #personal-projects .btn-outline-warning:hover {
-  color:  #2b2b2b;
-  background-color: #ffc107;
-  border-color: #ffc107;
+  color: #343a40; /* Primary color */
+  background-color: #ffc107; /* Secondary color */
+  border-color: #ffc107; /* Secondary color */
 }
 
 /* Modal Styles */
 .modal-header {
-  background-color: #343a40;
-  color: #fff;
+  background-color: #343a40; /* Primary color */
+  color: #f8f9fa; /* Light color for contrast */
   border-bottom: none;
 }
 
@@ -386,7 +409,7 @@ p.lead {
 
 .modal-body p {
   font-size: 1rem;
-  color: #333;
+  color: #343a40; /* Primary color */
 }
 
 .modal-footer {
@@ -395,12 +418,12 @@ p.lead {
 }
 
 .modal-footer .btn-secondary {
-  background-color: #343a40;
+  background-color: #343a40; /* Primary color */
   border: none;
 }
 
 .modal-footer .btn-secondary:hover {
-  background-color: #495057;
+  background-color: #495057; /* Accent color 2 */
 }
 
 /* Scroll Animations */
@@ -415,6 +438,17 @@ p.lead {
   }
 }
 
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .scroll-animation {
   opacity: 0;
   animation: fadeInUp 0.8s ease-out forwards;
@@ -422,4 +456,41 @@ p.lead {
 
 .scroll-animation-delay {
   animation-delay: 0.3s;
+}
+
+/* About Me Section */
+#about .card {
+  background-color: #343a40; /* Primary color */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+#about .card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffc107; /* Secondary color */
+}
+
+#about .card-subtitle {
+  font-size: 1.25rem;
+  color: #bbb;
+}
+
+#about .card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f8f9fa; /* Light color for contrast */
+}
+
+#about .profile-image {
+  border-radius: 50%;
+  border: 5px solid #ffc107; /* Secondary color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#about .profile-image:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
 }
