@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pridi:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>FDDesigns</title>
 </head>
 <body>
@@ -49,14 +50,19 @@
   </nav>
 
   <!-- Header Section -->
-  <header class="bg-dark text-light p-5 mt-5 text-center text-md-start" id="Home" style="background-image: url('/img/header-bg.jpg'); background-size: cover; background-position: center;">
-    <div class="container d-flex flex-column flex-md-row align-items-start justify-content-between">
+  <header class="bg-dark text-light p-5 text-center text-md-start" id="Home" style="background-image: url('/img/header-bg.jpg'); background-size: cover; background-position: center; height: 100vh; position: relative;">
+    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);"></div>
+    <div class="container d-flex flex-column flex-md-row align-items-start justify-content-between" style="position: relative; z-index: 1;">
       <div class="text-center text-md-start">
         <h1 class="header-title animate__animated animate__fadeInDown">Welcome To <span class="text-warning">FDDesigns</span></h1>
+        <h2 class="header-subtitle animate__animated animate__fadeInDown">Creative Solutions for Your Digital Needs</h2>
         <p class="header-subtitle lead my-4 animate__animated animate__fadeInUp">Welcome to FDDesigns! Whether you're looking for creative inspiration, innovative projects, or just want to see how design can transform ideas into reality, you've come to the right place.</p>
         <button class="btn btn-outline-warning btn-lg text-light animate__animated animate__pulse animate__infinite" type="button" onclick="document.getElementById('get-in-touch').scrollIntoView({behavior: 'smooth'});">Contact me!</button>
       </div>
       <img class="img-fluid w-50 d-none d-md-block animate__animated animate__fadeInRight" src="/img/Showcase.svg" alt="Showcase Image">
+    </div>
+    <div class="scroll-down-arrow" onclick="document.getElementById('skills-expertise').scrollIntoView({behavior: 'smooth'});">
+      <i class="fas fa-chevron-down"></i>
     </div>
   </header>
 
