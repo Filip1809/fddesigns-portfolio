@@ -27,8 +27,8 @@ p, span, li {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  transition: color 200ms;
-  color: #343a40; /* Primary color */
+  transition: color 200ms, background-color 0.3s ease, color 0.3s ease;
+  color: #ffc107;
   border-color: #ffc107; /* Secondary color */
 }
 
@@ -46,6 +46,11 @@ p, span, li {
 
 .btn-outline-warning:hover::before {
   left: 0;
+}
+
+.btn-outline-warning:hover {
+  background-color: #ffc107;
+  color: #000;
 }
 
 /* Icon Wrapper Styles */
@@ -539,8 +544,14 @@ header .text-center {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 2rem;
+  color: #ffc107;
   cursor: pointer;
-  animation: bounce 2s infinite;
+  transition: transform 0.3s ease;
+}
+
+.scroll-down-arrow:hover {
+  transform: translateX(-50%) translateY(-10px);
 }
 
 .scroll-down-arrow i {
@@ -585,4 +596,9 @@ header .text-center {
     left: 50%;
     transform: translateX(-50%);
   }
+}
+
+.header-paragraph {
+  max-width: 600px;
+  margin: 0 auto;
 }

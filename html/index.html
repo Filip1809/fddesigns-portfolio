@@ -50,18 +50,21 @@
   </nav>
 
   <!-- Header Section -->
-  <header class="bg-dark text-light p-5 text-center text-md-start" id="Home" style="background-image: url('/img/header-bg.jpg'); background-size: cover; background-position: center; height: 100vh; position: relative;">
+  <header class="bg-dark text-light p-5 text-center text-md-start" id="Home" style="position: relative; height: 100vh;">
     <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);"></div>
+    <video autoplay muted loop id="headerVideo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+      <source src="/path/to/your/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
     <div class="container d-flex flex-column flex-md-row align-items-start justify-content-between" style="position: relative; z-index: 1;">
       <div class="text-center text-md-start">
         <h1 class="header-title animate__animated animate__fadeInDown">Welcome To <span class="text-warning">FDDesigns</span></h1>
         <h2 class="header-subtitle animate__animated animate__fadeInDown">Creative Solutions for Your Digital Needs</h2>
-        <p class="header-subtitle lead my-4 animate__animated animate__fadeInUp">Welcome to FDDesigns! Whether you're looking for creative inspiration, innovative projects, or just want to see how design can transform ideas into reality, you've come to the right place.</p>
-        <button class="btn btn-outline-warning btn-lg text-light animate__animated animate__pulse animate__infinite" type="button" onclick="document.getElementById('get-in-touch').scrollIntoView({behavior: 'smooth'});">Contact me!</button>
+        <p class="header-subtitle lead my-4 animate__animated animate__fadeInUp header-paragraph">Welcome to FDDesigns! Whether you're looking for creative inspiration, innovative projects, or just want to see how design can transform ideas into reality, you've come to the right place.</p>
+        <button class="btn btn-outline-warning btn-lg text-light animate__animated animate__pulse animate__infinite" type="button" onclick="document.getElementById('get-in-touch').scrollIntoView({behavior: 'smooth'});" aria-label="Contact me">Contact me!</button>
       </div>
-      <img class="img-fluid w-50 d-none d-md-block animate__animated animate__fadeInRight" src="/img/Showcase.svg" alt="Showcase Image">
     </div>
-    <div class="scroll-down-arrow" onclick="document.getElementById('skills-expertise').scrollIntoView({behavior: 'smooth'});">
+    <div class="scroll-down-arrow" onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'});" style="cursor: pointer;" aria-label="Scroll down">
       <i class="fas fa-chevron-down"></i>
     </div>
   </header>
@@ -69,7 +72,7 @@
   <!-- Main Content Section -->
   <main>
     <!-- Skills & Expertise Section -->
-    <section class="bg-primary text-light p-4">
+    <section class="bg-primary text-light p-4" id="skills">
       <div class="container text-center">
         <!-- Centered Headline -->
         <h2 class="mb-3 animate__animated animate__fadeInUp">Skills & Expertise</h2>
